@@ -1,6 +1,7 @@
 ﻿using System;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using XFCollectionView.Views;
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace XFCollectionView
@@ -11,7 +12,7 @@ namespace XFCollectionView
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            MainPage = new NavigationPage(new  HomePage());
         }
 
         protected override void OnStart()
